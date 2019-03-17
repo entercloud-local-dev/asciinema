@@ -58,7 +58,7 @@ def record(command, writer, env=os.environ, rec_stdin=False):
 
         nonlocal muted
 
-        if data == b'\x10': # ctrl+p
+        if data == b'\x10':  # ctrl+p
             muted = not muted
         else:
             _write_master(data)
